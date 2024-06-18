@@ -3,6 +3,21 @@
     to { opacity: 1; }
 }
 
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-10px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
 
 html, body {
     width: 100vw;
@@ -14,14 +29,14 @@ html, body {
 * {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Tahoma", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     box-sizing: border-box;
 }
 
 .background {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(photo1.jpg);
+    background: linear-gradient(rgba(37, 37, 37, 0.8), rgba(17, 17, 17, 0.8)), url(antalia-turtsiia-more-ruiny.jpg);
     background-size: cover;
     background-position: center;
     padding: 10% 10%;
@@ -34,7 +49,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
     color: aliceblue;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'courier new', monospace;
     animation: fadeIn 2s ease-in-out;
     font-size: 30px;
 }
@@ -45,7 +60,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
     color: aliceblue;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'courier new', monospace;
     animation: fadeIn 2s ease-in-out;
     font-size: 40px;
     font-display: bold;
@@ -61,46 +76,90 @@ html, body {
 }
 
 .email-input {
-    width: 50%; 
-    padding: 10px;
-    margin: 10px 0;
+    background-color: #c4c4c4;
+    padding: 15px 20px;
+    margin: 8px 0;
     margin-top: 30px;
+    display: inline-block;
+    border: 2px solid #5a5555;
+    border-radius: 30px;
+    box-sizing: border-box;
     font-size: 16px;
-    border-radius: 20px; 
-    box-shadow: rgba(0,0,0,0.8);
-    animation: fadeIn 2s ease-in-out;
-    font-family: 'Times New Roman', Times, serif;
-    animation: floatAnimation 10s ease-in-out infinite;
-    outline: none !important;
-
+    color: #474747;
+    font-weight: 600;
+    line-height: 20px;
+    width: 25%;
+    text-align: center;
+    transition: border-color 0.3s ease-in-out;
 }
+
+    
+
+.email-input:focus {
+    outline: none;
+    border-color: #777; 
+    box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.5);
+    animation: float 0.5s ease-in-out;
+}
+
+.email-input:hover {
+    background-color: #c4c4c4;
+    border-color: #999;}
 
 .subscribe-button {
-    padding: 10px 20px;
+    background-color: #c4c4c4;
+    padding: 15px 20px; 
+    margin: 8px 0; 
+    margin-top: 10px; 
+    display: inline-block; 
+    border: 2px solid #5a5555; 
+    border-radius: 30px;
+    box-sizing: border-box; 
     font-size: 16px;
-    margin-top: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    background-color: #fff; 
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: rgba(0,0,0,0.8);
-    transition: background-color 0.3s ease; 
-    transform: rotate3d(1, 0, 0, 20deg);
+    color: #474747; 
+    font-weight: 600; 
+    line-height: 40px;
+    width: 10%; 
+    text-align: center; 
+    transition: border-color 0.3s ease-in-out; 
+    cursor: pointer; 
 }
 
-.subscribe-button:hover {
-    background-color: #ccc; 
+.subscribe-button:focus, .subscribe-button:hover {
+    outline: none;
+    border-color: #777; 
+    box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.5); 
 }
+@media (min-width: 768px) {
+  .subscribe-button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+    
+
 .subscribe{
     padding-top: 2%;
     display: flex;
     color: aliceblue;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'courier new', monospace;
     animation: fadeIn 2s ease-in-out;
     font-size: 30px;
     font-weight: bold;
+}
+.emailMessage {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'courier new', monospace;
+    animation: fadeIn 2s ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
 

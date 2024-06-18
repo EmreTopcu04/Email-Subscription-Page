@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class = "background">
         <div>
-            <h3 class = "header">Coming Soon!</h1>
+            <h1 class = "header">Coming Soon!</h1>
         </div>
 
         <h1 class = "bigText">We are working on something awesome. Make sure you are the first to know when we launch our application               
@@ -16,12 +17,11 @@
 
         <div class="newsletter-container">
             <h2 class="subscribe">Subscribe to our newsletter</h2>
-            <input type="email" placeholder="Enter your email" class="email-input">
+            <input type="email" placeholder="Enter your email" class="email-input" id = "email-input">
+            <button class="subscribe-button" id = "subscribeButton" onclick="change()">Subscribe</button>
             <div id="emailMessage"></div>
-            <button class="subscribe-button">Subscribe</button>
         </div>
-
     </div>
-    
+    <script src="app.js"></script>    
 </body>
 </html>
