@@ -162,4 +162,15 @@ html, body {
     text-align: center;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    padding: 10px 0;
+    font-size: 15px; 
+    font-family: 'courier new', monospace;
+}
 
