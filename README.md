@@ -18,3 +18,7 @@
 ### Already Submitted
 
 ![image](https://github.com/EmreTopcu04/Email-Subscription-Page/assets/114030199/6bddc1cd-5b82-4a4b-b53d-55ee32e6e390)
+
+## Page Link:
+
+https://emretopcu04.github.io/Email-Subscription-Page/
